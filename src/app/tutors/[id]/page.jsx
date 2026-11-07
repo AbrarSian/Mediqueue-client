@@ -1,4 +1,5 @@
 "use client";
+import { API_BASE } from "@/lib/api";
 
 import React, { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
@@ -31,7 +32,7 @@ import { toast } from "sonner";
 // BetterAuth session hook
 import { authClient } from "@/lib/auth-client";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL;
+
 
 export default function TutorDetailsPage() {
   const { id } = useParams();

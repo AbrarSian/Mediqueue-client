@@ -15,6 +15,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Calendar } from "@/components/ui/calendar";
 
 import { authClient } from "@/lib/auth-client";
+import { API_BASE } from "@/lib/api";
 
 export default function AddTutorPage() {
   const router = useRouter();
@@ -67,7 +68,7 @@ export default function AddTutorPage() {
       userId: session.id,
     };
 
-    const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+
 
     try {
       let jwtToken = "";

@@ -1,4 +1,5 @@
 "use client";
+import { API_BASE } from "@/lib/api";
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -36,7 +37,7 @@ import { toast } from "sonner";
 
 import { authClient } from "@/lib/auth-client";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL;
+
 
 // just the badge color
 function StatusBadge({ status }) {

@@ -1,4 +1,5 @@
 'use client'
+import { API_BASE } from "@/lib/api";
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -14,7 +15,6 @@ import {
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
 
 export default function AvailableTutorsSection() {
    const router = useRouter()
